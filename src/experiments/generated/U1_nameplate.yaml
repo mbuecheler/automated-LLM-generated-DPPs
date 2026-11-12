@@ -1,0 +1,17 @@
+condition: U1_UAV_Nameplate
+passport_type: Digital Product Passport (DPP)
+product:
+  category: Unmanned aerial vehicle
+  product_type: Fixed-wing unmanned aerial system
+  model: CREX-B
+  data_paths:
+  - src/data/products/UAVs/U1_CREX_B/CREX-B_UAS.pdf
+submodel:
+  name: Digital Nameplate
+resources:
+  aas_template: src/data/templates/aas/IDTA 02006-3-0-1_Template_Digital Nameplate_cleaned.json
+  aas_template_documentation: src/data/annotations/aas_template_documentation/IDTA-02006-3-0-1_Submodel_Digital-Nameplate.pdf
+  aas_metamodel_summary: src/data/annotations/aas_metamodel_summary/AAS_metamodel_summary.txt
+ingestion:
+  max_chars_per_file: null
+  max_total_chars: null

@@ -1,0 +1,61 @@
+# Shared model/provider configuration used by all experiment pipelines.
+# API keys belong in .env, never in this file.
+# Model IDs can be changed here or overridden with the environment variables below.
+
+models:
+
+  gpt:
+    provider: openai
+    display_name: GPT-5.6 Sol
+    model: ${OPENAI_MODEL:-gpt-5.6-sol}
+    api_key_env: OPENAI_API_KEY
+    parameters:
+      max_completion_tokens: 65536
+
+  claude:
+    provider: anthropic
+    display_name: Claude Fable 5
+    model: ${ANTHROPIC_MODEL:-claude-fable-5}
+    api_key_env: ANTHROPIC_API_KEY
+    parameters:
+      max_tokens: 65536
+
+  llama:
+    provider: huggingface
+    display_name: Llama 4 Scout
+    model: ${HF_LLAMA_MODEL:-meta-llama/Llama-4-Scout-17B-16E-Instruct}
+    api_key_env: HF_TOKEN
+    #old available inference provider: nscale
+    inference_provider: deepinfra
+    parameters:
+      temperature: 0.0
+      max_tokens: 65536
+
+  qwen:
+    provider: huggingface
+    display_name: Qwen3.5-397B-A17B
+    model: ${HF_QWEN_MODEL:-Qwen/Qwen3.5-397B-A17B}
+    api_key_env: HF_TOKEN
+    inference_provider: ovhcloud
+    parameters:
+      temperature: 0.0
+      max_tokens: 65536
+
+  granite:
+    provider: huggingface
+    display_name: Granite 4.2 8B
+    model: ${HF_GRANITE_MODEL:-ibm-granite/granite-4.2-8b}
+    api_key_env: HF_TOKEN
+    inference_provider: deepinfra
+    parameters:
+      temperature: 0.0
+      max_tokens: 16384
+
+  mistral:
+    provider: mistral
+    display_name: Mistral Large 4
+    model: ${MISTRAL_MODEL:-mistral-large-4}
+    api_key_env: MISTRAL_API_KEY
+    parameters:
+      temperature: 0.0
+      max_tokens: 65536

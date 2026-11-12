@@ -1,0 +1,18 @@
+condition: EC7_Electrical_Component_Nameplate
+passport_type: Digital Product Passport (DPP)
+product:
+  category: Electrical Component
+  product_type: Armor PowerFlex AC drive
+  model: 35S-6D2-L201
+  data_paths:
+  - src/data/products/Electrical_Components/EC7_Rockwell_35S-6D2-L201/1e908760-be25-4169-a70c-542124ee42ae.pdf
+  - src/data/products/Electrical_Components/EC7_Rockwell_35S-6D2-L201/Rockwell.pdf
+submodel:
+  name: Digital Nameplate
+resources:
+  aas_template: src/data/templates/aas/IDTA 02006-3-0-1_Template_Digital Nameplate_cleaned.json
+  aas_template_documentation: src/data/annotations/aas_template_documentation/IDTA-02006-3-0-1_Submodel_Digital-Nameplate.pdf
+  aas_metamodel_summary: src/data/annotations/aas_metamodel_summary/AAS_metamodel_summary.txt
+ingestion:
+  max_chars_per_file: null
+  max_total_chars: null

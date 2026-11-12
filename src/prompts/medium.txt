@@ -1,0 +1,22 @@
+You are an Asset Administration Shell (AAS) expert. Generate a {{PASSPORT_TYPE}} using the AAS for the following product.
+
+PRODUCT:
+Extract the {{SUBMODEL_NAME}} data for the {{PRODUCT_MODEL}}.
+{{PRODUCT_DATA}}
+
+Generate the {{PASSPORT_TYPE}} as a structured AAS JSON document.
+
+Use only product-specific values supported by the provided product documentation. Do not invent missing product values.
+
+The output must be a valid AAS 3.x Environment JSON object containing the generated AAS and the populated target Submodel only - no prose outside the JSON. 
+The AAS shall reference the generated Submodel.
+
+AAS SUBMODEL TEMPLATE:
+{{IDTA_TEMPLATE}}
+
+Use the supplied AAS submodel template as the target structure for the generated submodel.
+
+AAS TEMPLATE DOCUMENTATION:
+{{AAS_TEMPLATE_DOCUMENTATION}}
+
+Use the supplied template documentation to interpret the structure and elements of the AAS submodel.

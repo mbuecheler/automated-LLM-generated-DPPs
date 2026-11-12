@@ -1,0 +1,17 @@
+condition: B3_Battery_MaterialComposition
+passport_type: Digital Battery Passport (DBP)
+product:
+  category: Battery
+  product_type: NMC battery
+  model: BoilerCell Battery
+  data_paths:
+  - src/data/products/Batteries/B3_BoilerCellBattery/product_data.md
+submodel:
+  name: Battery Material Composition
+resources:
+  aas_template: src/data/templates/aas/IDTA 02035-6_DBP-Part-6_MaterialComposition_cleaned.json
+  aas_template_documentation: src/data/annotations/aas_template_documentation/IDTA-02035-6_DBP-Part-6_MaterialComposition.pdf
+  aas_metamodel_summary: src/data/annotations/aas_metamodel_summary/AAS_metamodel_summary.txt
+ingestion:
+  max_chars_per_file: null
+  max_total_chars: null

@@ -1,0 +1,27 @@
+condition: EC6_Electrical_Component_TechnicalData
+passport_type: Digital Product Passport (DPP)
+product:
+  category: Electrical Component
+  product_type: Output signal conditioner
+  model: MACX MCR-IDS-I-I
+  data_paths:
+  - src/data/products/Electrical_Components/EC6_Phoenix_MACX_MCR_2908063/phoenix-contact-2908063-en.pdf
+  - src/data/products/Electrical_Components/EC6_Phoenix_MACX_MCR_2908063/2908063_08_Product
+    Environmental Footprint.pdf
+  - src/data/products/Electrical_Components/EC6_Phoenix_MACX_MCR_2908063/Contact_Phoenix.pdf
+submodel:
+  name: Technical Data
+resources:
+  aas_template: src/data/templates/aas/IDTA 02003_2-0-1_Template_TechnicalData_cleaned.json
+  aas_template_documentation: src/data/annotations/aas_template_documentation/IDTA-02003_Generic-Frame-for-Technical-Data.pdf
+  aas_metamodel_summary: src/data/annotations/aas_metamodel_summary/AAS_metamodel_summary.txt
+ingestion:
+  max_chars_per_file: null
+  max_total_chars: null
+eclass:
+  enabled: true
+  classification_evidence_paths:
+  - src/data/products/Electrical_Components/EC6_Phoenix_MACX_MCR_2908063/phoenix-contact-2908063-en.pdf
+  - src/data/products/Electrical_Components/EC6_Phoenix_MACX_MCR_2908063/2908063_08_Product
+    Environmental Footprint.pdf
+  - src/data/products/Electrical_Components/EC6_Phoenix_MACX_MCR_2908063/Contact_Phoenix.pdf

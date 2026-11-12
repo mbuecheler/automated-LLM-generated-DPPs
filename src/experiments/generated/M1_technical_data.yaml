@@ -1,0 +1,23 @@
+condition: M1_Electric_Motor_TechnicalData
+passport_type: Digital Product Passport (DPP)
+product:
+  category: Electric Motor
+  product_type: Electric motor and gearbox
+  model: EPM.32.120.HS
+  data_paths:
+  - src/data/products/Electric_Motors/M1_Elinta_EPM_32_120_HS/EPM.32.120.HS.pdf
+  - src/data/products/Electric_Motors/M1_Elinta_EPM_32_120_HS/Contacts_Elinta_motors.pdf
+submodel:
+  name: Technical Data
+resources:
+  aas_template: src/data/templates/aas/IDTA 02003_2-0-1_Template_TechnicalData_cleaned.json
+  aas_template_documentation: src/data/annotations/aas_template_documentation/IDTA-02003_Generic-Frame-for-Technical-Data.pdf
+  aas_metamodel_summary: src/data/annotations/aas_metamodel_summary/AAS_metamodel_summary.txt
+ingestion:
+  max_chars_per_file: null
+  max_total_chars: null
+eclass:
+  enabled: true
+  classification_evidence_paths:
+  - src/data/products/Electric_Motors/M1_Elinta_EPM_32_120_HS/EPM.32.120.HS.pdf
+  - src/data/products/Electric_Motors/M1_Elinta_EPM_32_120_HS/Contacts_Elinta_motors.pdf

@@ -1,0 +1,27 @@
+condition: EC2_Electrical_Component_TechnicalData
+passport_type: Digital Product Passport (DPP)
+product:
+  category: Electrical Component
+  product_type: Repeater power supply
+  model: MINI MCR-2-RPSS-I-2I
+  data_paths:
+  - src/data/products/Electrical_Components/EC2_Phoenix_MINI_MCR_2905628/Phoenix_Mini_MCR.pdf
+  - src/data/products/Electrical_Components/EC2_Phoenix_MINI_MCR_2905628/db_en_mini_mcr_2_rpss_i_2i_pt_106300_en_04.pdf
+  - src/data/products/Electrical_Components/EC2_Phoenix_MINI_MCR_2905628/pxc_2905628_03_02_MINI-MCR-2-RPSS-I-2I_2D.dxf
+  - src/data/products/Electrical_Components/EC2_Phoenix_MINI_MCR_2905628/pxc_2905628_03_02_MINI-MCR-2-RPSS-I-2I_3D.stp
+  - src/data/products/Electrical_Components/EC2_Phoenix_MINI_MCR_2905628/Contact_Phoenix.pdf
+submodel:
+  name: Technical Data
+resources:
+  aas_template: src/data/templates/aas/IDTA 02003_2-0-1_Template_TechnicalData_cleaned.json
+  aas_template_documentation: src/data/annotations/aas_template_documentation/IDTA-02003_Generic-Frame-for-Technical-Data.pdf
+  aas_metamodel_summary: src/data/annotations/aas_metamodel_summary/AAS_metamodel_summary.txt
+ingestion:
+  max_chars_per_file: null
+  max_total_chars: null
+eclass:
+  enabled: true
+  classification_evidence_paths:
+  - src/data/products/Electrical_Components/EC2_Phoenix_MINI_MCR_2905628/Phoenix_Mini_MCR.pdf
+  - src/data/products/Electrical_Components/EC2_Phoenix_MINI_MCR_2905628/db_en_mini_mcr_2_rpss_i_2i_pt_106300_en_04.pdf
+  - src/data/products/Electrical_Components/EC2_Phoenix_MINI_MCR_2905628/Contact_Phoenix.pdf
